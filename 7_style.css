@@ -3,25 +3,27 @@
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 40vw;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 .navebar__right-side a {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  margin: 5px;
+  padding: 5px;
 }
 .navebar__right-side a:hover {
   border: 1px solid whitesmoke;
   border-radius: 15px;
   background-color: whitesmoke;
-  padding: 15px 5px;
 }
 .navbar h1 {
   color: black;
 }
-.navbar {
+
+.navbar-and-logo {
   display: flex;
   justify-content: space-between;
   background-color: rgb(124, 199, 124);
@@ -30,4 +32,30 @@
   height: 70px;
   position: fixed;
   top: 0;
+}
+
+/*main page content*/
+.main-page__content {
+  padding: 0;
+  margin: 0;
+}
+
+.main-page {
+  height: 100vh;
+  background: url(/images/daniel-schludi-l8cvrt3Hpec-unsplash.jpg) no-repeat
+    center center/cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.main-page__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0 15px;
 }
