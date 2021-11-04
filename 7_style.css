@@ -17,6 +17,7 @@
   font-weight: bold;
   margin: 5px;
   padding: 5px;
+  text-align: center;
 }
 .navebar__right-side a:hover {
   border: 1px solid var(--a-hover-color);
@@ -90,7 +91,7 @@
 /*--------contact icons-------*/
 .contact {
   background-color: gray;
-  height: 20%;
+  max-height: 20%;
 }
 
 .contact__flex-items {
@@ -99,11 +100,11 @@
   align-content: center;
   text-align: center;
   height: var(--full-higth);
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
 }
 
-.contact__flex-items > div {
-  padding: 1rem;
+.contact__flex-items > div > div {
+  padding: 0 1rem;
 }
 
 /*--------about me-------*/
@@ -145,7 +146,7 @@
   margin: 0;
   padding: 0;
 }
-/*third page*/
+/*---------------third page-------------*/
 .third-page {
   height: 100vh;
 }
@@ -173,4 +174,31 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  /*----------first bage----------*/
+  .navbar-and-logo {
+    flex-direction: column;
+    height: 120px;
+    padding: 0;
+    margin: 2px;
+  }
+  .navbar-and-logo > h1 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .navebar__right-side {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding-left: 25px;
+  }
+  .navebar__right-side a {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+  }
+  /*---------secound page-----------*/
 }
