@@ -134,7 +134,7 @@
   color: beige;
   margin: 0;
   padding: 0;
-  opacity: 1;
+  opacity: 0.6;
 }
 
 @media (max-width: 600px) {
