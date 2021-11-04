@@ -118,7 +118,7 @@
   padding: 0.5rem 0;
 }
 
-.contact__flex-items > a > i {
+.fab {
   color: black;
 }
 .contact__flex-items > div > div {
@@ -128,11 +128,13 @@
 /*-------------about me page-------------*/
 .about-me-page {
   height: 100vh;
-  background: url(/images/yellow-tape.jpg) no-repeat center center/cover;
+  background: url("/images/hosein-zanbori-wvbOWcIDuYg-unsplash\ \(1\).jpg")
+    no-repeat center center/cover;
   position: relative;
   color: beige;
   margin: 0;
   padding: 0;
+  opacity: 1;
 }
 
 @media (max-width: 600px) {
