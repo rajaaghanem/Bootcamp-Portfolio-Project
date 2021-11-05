@@ -145,8 +145,7 @@
 /*-------------about me page-------------*/
 .about-me-page {
   height: 100vh;
-  background: url("/images/hosein-zanbori-wvbOWcIDuYg-unsplash\ \(1\).jpg")
-    no-repeat center center/cover;
+  background: url("/images/yellow-tape.jpg") no-repeat center center/cover;
   position: relative;
   color: beige;
   margin: 0;
@@ -165,7 +164,7 @@
 
 .about-me-page__grid > div {
   align-content: center;
-  border: 5px solid black;
+  /* border: 5px solid black; */
   padding: 6rem;
 }
 
@@ -205,7 +204,7 @@
   top: 0;
   left: 0;
   z-index: 2;
-  width: 200px;
+  width: auto;
   height: 60px;
   padding: 1rem;
   border-radius: 15px;
@@ -216,12 +215,12 @@
   font-size: 40px;
 }
 .about-me-page__why .why {
-  width: auto;
+  /* width: auto; */
   height: 80px;
 }
 
 .about-me-page__what .what {
-  width: 300px;
+  /* width: auto; */
   height: 70px;
 }
 
@@ -242,7 +241,6 @@
 .about-me-page__why .toggler:checked ~ .why-do-this > div,
 .about-me-page__what .toggler:checked ~ .what-i-know > div {
   transform: scale(1);
-  transition-duration: var(--menu-speed);
 }
 
 .about-me-page__who .toggler:checked ~ .who-am-i > div > div,
