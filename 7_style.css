@@ -70,7 +70,7 @@
 }
 
 .main-page__content p {
-  max-width: 600px;
+  max-width: 700px;
 }
 
 .main-page:before {
@@ -103,6 +103,23 @@
   background-color: gray;
 }
 
+.main-page__content-binary {
+  animation-name: binary-animation;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform: translateX(0);
+  animation-direction: alternate;
+}
+
+.main-page__content-binary > p {
+  margin-left: 30px;
+}
+@keyframes binary-animation {
+  to {
+    transform: translateX(-50px);
+  }
+}
 /*--------contact icons-------*/
 .contact {
   background-color: gray;
@@ -199,7 +216,7 @@
   font-size: 40px;
 }
 .about-me-page__why .why {
-  min-width: 400px;
+  width: auto;
   height: 80px;
 }
 
