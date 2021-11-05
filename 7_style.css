@@ -175,7 +175,7 @@
   border-color: green;
   transform: rotate(0deg);
   animation-name: border-round-after;
-  animation-duration: 10s;
+  animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: alternate;
@@ -185,7 +185,7 @@
   border-color: rgb(96, 163, 96);
   transform: rotate(360deg);
   animation-name: border-round-before;
-  animation-duration: 10s;
+  animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: alternate;
