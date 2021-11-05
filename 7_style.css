@@ -144,13 +144,14 @@
 
 /*-------------about me page-------------*/
 .about-me-page {
-  height: 100vh;
-  background: url("/images/yellow-tape.jpg") no-repeat center center/cover;
+  max-height: 100vh;
+  background-color: whitesmoke;
+  /* background: url("/images/yellow-tape.jpg") no-repeat center center/cover; */
   position: relative;
   color: beige;
   margin: 0;
   padding: 0;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .about-me-page__my-img {
@@ -175,7 +176,7 @@
   border-color: green;
   transform: rotate(0deg);
   animation-name: border-round-after;
-  animation-duration: 12s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: alternate;
@@ -185,7 +186,7 @@
   border-color: rgb(96, 163, 96);
   transform: rotate(360deg);
   animation-name: border-round-before;
-  animation-duration: 12s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: alternate;
@@ -203,7 +204,7 @@
 }
 
 .about-me-page__grid {
-  max-height: var(--full-higth);
+  max-height: 100vh;
   max-width: 100%;
   display: grid;
   grid-template-rows: repeat(3, auto);
@@ -238,7 +239,7 @@
 }
 
 .about-me-page__why .toggler {
-  width: 230px;
+  width: 260px;
   height: 100px;
 }
 .about-me-page__what .toggler {
@@ -270,13 +271,6 @@
 .about-me-page__what .what {
   /* width: auto; */
   height: 70px;
-}
-
-.about-me-page__who .who:hover,
-.about-me-page__why .why:hover,
-.about-me-page__what .what:hover {
-  background-color: gray;
-  opacity: 0.5;
 }
 
 .about-me-page__who .toggler:checked ~ .who-am-i,
@@ -313,10 +307,49 @@
 .about-me-page__who .who-am-i > div,
 .about-me-page__why .why-do-this > div,
 .about-me-page__what .what-i-know > div {
-  background-color: wheat;
-  opacity: 0.7;
+  background: url("/images/element5-digital-z6i_UCBuu5Q-unsplash.jpg") no-repeat
+    center center/cover;
+  /* background-color: wheat; */
+  opacity: 1;
   color: black;
   border-radius: 15px;
+}
+
+.who__left-btn {
+  display: inline-block;
+  animation-name: left-btn;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  transform: translateX(0px);
+}
+
+/* .about-me-page__who .toggler:checked ~ span {
+  display: inline-block;
+  transform: rotate(180deg);
+} */
+
+/* .about-me-page__who .toggler:checked ~ .who__left-btn {
+  display: inline-block;
+  animation-name: left-btn-flip;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  transform: rotate(270deg);
+}
+
+@keyframes left-btn-flip {
+  to {
+    transform: translateX(-10px) rotate(270deg);
+  }
+} */
+
+@keyframes left-btn {
+  to {
+    transform: translateX(10px);
+  }
 }
 
 @media (max-width: 600px) {
