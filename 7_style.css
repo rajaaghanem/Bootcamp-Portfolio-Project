@@ -215,7 +215,7 @@
 .about-me-page__grid > div {
   align-content: center;
   /* border: 5px solid black; */
-  padding: 6rem 0;
+  padding: 2rem 0;
 }
 
 /*-----------------about me buttons-------------*/
@@ -307,14 +307,23 @@
 .about-me-page__who .who-am-i > div,
 .about-me-page__why .why-do-this > div,
 .about-me-page__what .what-i-know > div {
-  background: url("/images/element5-digital-z6i_UCBuu5Q-unsplash.jpg") no-repeat
-    center center/cover;
+  background: url("/images/part\ 1.jpg") no-repeat center center/cover;
   /* background-color: wheat; */
   opacity: 1;
   color: black;
   border-radius: 15px;
+  width: 40%;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
+.about-me-page__why .why-do-this > div {
+  background: url("/images/part\ 2.jpg") no-repeat center center/cover;
+}
+.about-me-page__what .what-i-know > div {
+  background: url("/images/part\ 3.jpg") no-repeat center center/cover;
+}
 .who__left-btn {
   display: inline-block;
   animation-name: left-btn;
