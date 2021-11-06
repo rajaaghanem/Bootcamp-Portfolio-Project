@@ -357,11 +357,12 @@
   grid-gap: 2rem;
 }
 .projects-page__grid > div {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 20px;
   width: 20rem;
   height: 16rem;
 }
+
 .projects-page__grid__project1,
 .projects-page__grid__project2,
 .projects-page__grid__project3,
@@ -369,22 +370,51 @@
   overflow: hidden;
   display: grid;
   grid-template-rows: repeat(2, 200px);
+  font-size: 18px;
 }
 
-.project1-img {
-  background: url("/images/volodymyr-hryshchenko-D5_cfqMAY0Y-unsplash\ \(1\).jpg")
-    no-repeat center center/cover;
+.projects-imgs {
   width: 20rem;
-  height: 13rem;
   border-radius: 20px;
+  height: 13rem;
   opacity: 0.8;
 }
 
-.projects-page__grid__project1 .text {
-  text-align: center;
-  height: 6rem;
+.project1-img {
+  background: url("/images/model-3-hero-desktop.jfif") no-repeat center
+    center/cover;
+}
+.project2-img {
+  background: url("/images/kevin-lee-e5J2uB0HUsc-unsplash.jpg") no-repeat center
+    center/cover;
+}
+.project3-img {
+  background: url("/images/1\ \(6\).jpg") no-repeat center center/cover;
+}
+.project4-img {
+  background: url("/images/koushik-chowdavarapu-aWBPk_GBaCk-unsplash.jpg")
+    no-repeat center center/cover;
 }
 
+.text {
+  text-align: center;
+  height: 6rem;
+  color: gray;
+}
+
+.text a {
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 15px;
+  color: beige;
+  background-color: green;
+  padding: 6px;
+}
+
+.text a:hover {
+  background-color: lightgray;
+  color: green;
+}
 .projects-page__grid__project1:hover,
 .projects-page__grid__project2:hover,
 .projects-page__grid__project3:hover,
