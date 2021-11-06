@@ -434,7 +434,7 @@
 /*-------------------Audio box-----------------------*/
 .audio-song {
   display: grid;
-  grid-template-columns: repeat(1, 11rem);
+  grid-template-columns: repeat(1, 15rem);
   justify-content: center;
 }
 
@@ -442,7 +442,7 @@
   background: url("/images/daniel-schludi-l8cvrt3Hpec-unsplash.jpg") no-repeat
     center center/cover;
   height: 10rem;
-  width: 10rem;
+  width: 18rem;
 }
 /*----------------------media quires----------------*/
 @media (max-width: 600px) {
