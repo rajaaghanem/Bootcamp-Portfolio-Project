@@ -361,7 +361,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   /* margin: 100px; */
-  padding: 30px;
+  padding: 100px 0 0 1rem;
   grid-gap: 2rem;
 }
 .projects-page__grid > div {
