@@ -320,6 +320,7 @@
 .about-me-page__why .why-do-this > div {
   background: url("/images/part\ 2.jpg") no-repeat center center/cover;
 }
+
 .about-me-page__what .what-i-know > div {
   background: url("/images/part\ 3.jpg") no-repeat center center/cover;
 }
@@ -344,6 +345,55 @@
   grid-template-columns: repeat(5, auto);
 }
 
+/*-------------------projects page------------------*/
+.projects-page {
+  height: 100vh;
+}
+
+.projects-page__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 100px;
+  grid-gap: 2rem;
+}
+.projects-page__grid > div {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 20rem;
+  height: 16rem;
+}
+.projects-page__grid__project1,
+.projects-page__grid__project2,
+.projects-page__grid__project3,
+.projects-page__grid__project4 {
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: repeat(2, 200px);
+}
+
+.project1-img {
+  background: url("/images/volodymyr-hryshchenko-D5_cfqMAY0Y-unsplash\ \(1\).jpg")
+    no-repeat center center/cover;
+  width: 20rem;
+  height: 13rem;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+
+.projects-page__grid__project1 .text {
+  text-align: center;
+  height: 6rem;
+}
+
+.projects-page__grid__project1:hover,
+.projects-page__grid__project2:hover,
+.projects-page__grid__project3:hover,
+.projects-page__grid__project4:hover {
+  width: 20rem;
+  height: 30rem;
+}
+
+/*----------------------media quires----------------*/
 @media (max-width: 600px) {
   /*----------first bage----------*/
   .navbar-and-logo {
