@@ -434,26 +434,28 @@
   /*----------first bage----------*/
   .navbar-and-logo {
     flex-direction: column;
-    height: 120px;
+    height: 100px;
     padding: 0;
-    margin: 2px;
+    /* margin: 2px; */
   }
   .navbar-and-logo > h1 {
     padding: 0;
     margin: 0;
     text-align: center;
+    font-size: 20px;
   }
   .navebar__right-side {
     padding: 0;
     margin: 0;
     text-align: center;
     align-self: center;
-    /* padding-left: 0 25px; */
+    padding-left: 25px;
   }
   .navebar__right-side a {
     padding: 10px;
-    /* margin: 5px 0; */
+    /* margin: 1.5rem 0; */
     text-align: center;
+    font-size: 16px;
   }
 
   .about-me-page__who .who-am-i > div,
@@ -507,13 +509,26 @@
     /* width: 30%; */
   }
 
+  .main-page__content h1 {
+    font-size: 30px;
+  }
+
   .projects-page__grid {
-    width: 100%;
+    max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(1, auto);
-    align-items: center;
-    justify-content: center;
-    padding: 4px 0;
-    margin: 0;
+    grid-template-columns: repeat(1, 200px);
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* padding: 1rem 0; */
+    margin-left: 1.4rem;
+  }
+
+  .projects-page__grid__project1:hover,
+  .projects-page__grid__project2:hover,
+  .projects-page__grid__project3:hover,
+  .projects-page__grid__project4:hover {
+    transform: scale(1.1);
+    width: 20rem;
+    height: 30rem;
   }
 }
