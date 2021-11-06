@@ -419,6 +419,7 @@
 .projects-page__grid__project2:hover,
 .projects-page__grid__project3:hover,
 .projects-page__grid__project4:hover {
+  transform: scale(1.3);
   width: 20rem;
   height: 30rem;
 }
