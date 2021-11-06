@@ -515,7 +515,7 @@
   .about-me-page {
     background-color: beige;
     background: url("/images/my-imgaes.jpg") repeat center center/contain;
-    opacity: 0.7;
+    opacity: 0.5;
     /* height: 150vh; */
   }
 
