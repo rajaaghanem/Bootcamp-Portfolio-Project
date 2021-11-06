@@ -265,7 +265,7 @@
 }
 .about-me-page__why .why {
   /* width: auto; */
-  height: 80px;
+  height: 70px;
 }
 
 .about-me-page__what .what {
@@ -316,7 +316,6 @@
   font-size: 22px;
   font-weight: bold;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
 }
 .about-me-page__why .why-do-this > div {
   background: url("/images/part\ 2.jpg") no-repeat center center/cover;
@@ -334,31 +333,15 @@
   transform: translateX(0px);
 }
 
-/* .about-me-page__who .toggler:checked ~ span {
-  display: inline-block;
-  transform: rotate(180deg);
-} */
-
-/* .about-me-page__who .toggler:checked ~ .who__left-btn {
-  display: inline-block;
-  animation-name: left-btn-flip;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-  transform: rotate(270deg);
-}
-
-@keyframes left-btn-flip {
-  to {
-    transform: translateX(-10px) rotate(270deg);
-  }
-} */
-
 @keyframes left-btn {
   to {
     transform: translateX(10px);
   }
+}
+
+.programming-icons {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
 }
 
 @media (max-width: 600px) {
@@ -385,5 +368,56 @@
     padding: 10px;
     /* margin: 5px 0; */
     text-align: center;
+  }
+
+  .about-me-page__who .who-am-i > div,
+  .about-me-page__why .why-do-this > div,
+  .about-me-page__what .what-i-know > div {
+    width: 100%;
+    font-size: 18px;
+    /* margin-top: 3rem; */
+  }
+  .about-me-page__who .who-am-i,
+  .about-me-page__why .why-do-this,
+  .about-me-page__what .what-i-know {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    /* align-items: center; */
+    justify-content: start;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .programming-icons > div > img {
+    max-width: 70px;
+  }
+  .about-me-page__who .who,
+  .about-me-page__why .why,
+  .about-me-page__what .what {
+    font-size: 18px;
+    height: 30px;
+  }
+
+  .about-me-page {
+    background-color: beige;
+    background: url("/images/my-imgaes.jpg") repeat center center/contain;
+    opacity: 0.7;
+    /* height: 150vh; */
+  }
+
+  .about-me-page__my-img {
+    display: none;
+  }
+
+  .about-me-page__grid {
+    grid-gap: 2px;
+    /* padding: 5px 0 20px; */
+  }
+
+  .main-page__content__btn a {
+    font-size: 22px;
+    /* width: 30%; */
   }
 }
