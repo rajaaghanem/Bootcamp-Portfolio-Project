@@ -116,6 +116,9 @@
 .main-page__content > div > h3 .play {
   color: rgb(10, 82, 10);
   font-weight: bold;
+  background-color: ivory;
+  border-radius: 15px;
+  padding: 2px;
 }
 .main-page__content-binary > p {
   margin-left: 30px;
