@@ -351,7 +351,7 @@
   max-width: 100vw;
   /* background: url("/images/esther-wechsler-pE7XZhQR1a8-unsplash.jpg") no-repeat
     center center/cover; */
-  background-color: lightyellow;
+  background-color: whitesmoke;
   opacity: 0.8;
   margin: 0%;
 }
@@ -361,8 +361,10 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   /* margin: 100px; */
-  padding: 100px 0 0 1rem;
+  padding: 100px 0 0 4rem;
   grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 .projects-page__grid > div {
   /* border: 1px solid black; */
@@ -464,6 +466,7 @@
   .about-me-page__who .who-am-i > div,
   .about-me-page__why .why-do-this > div,
   .about-me-page__what .what-i-know > div {
+    background: beige;
     width: 100%;
     font-size: 18px;
     /* margin-top: 3rem; */
@@ -471,7 +474,7 @@
   .about-me-page__who .who-am-i,
   .about-me-page__why .why-do-this,
   .about-me-page__what .what-i-know {
-    width: 100%;
+    width: 99%;
     height: 100%;
     visibility: hidden;
     overflow: hidden;
@@ -523,9 +526,11 @@
   .projects-page__grid {
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(1, 200px);
-    /* align-items: center; */
-    /* justify-content: center; */
+    grid-template-columns: repeat(1, 22rem); /*200px*/
+    padding: 100px 0 0 2rem;
+
+    align-items: center;
+    justify-content: center;
     /* padding: 1rem 0; */
     /* margin-left: 1.4rem; */
   }
