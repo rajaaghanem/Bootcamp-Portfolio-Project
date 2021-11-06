@@ -113,6 +113,10 @@
   animation-direction: alternate;
 }
 
+.main-page__content > div > h3 .play {
+  color: rgb(10, 82, 10);
+  font-weight: bold;
+}
 .main-page__content-binary > p {
   margin-left: 30px;
 }
